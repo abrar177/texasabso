@@ -1,0 +1,326 @@
+body {
+  background-color: #FAF5EC;
+  padding-top: 160px;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  font-size: 30px;
+  padding: 50px 0 0;
+  text-align: center;
+}
+
+#calendar {
+  background: #DCCFB9 url('https://static.vecteezy.com/system/resources/previews/009/924/607/original/cute-brown-aesthetic-abstract-minimal-background-perfect-for-wallpaper-backdrop-postcard-background-vector.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 100px;
+  text-align: center;
+  max-width: 100vw;
+  overflow: hidden;
+  position: relative;
+}
+
+.centered {
+  font-size: 43px;
+  font-family: 'URW Chancery L', cursive;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 250, 255, 0.5);
+  border-radius: 10px;
+  backdrop-filter: blur(7px);
+  color: #5e554f;
+}
+
+.body_info {
+  font-size: 35px;
+  padding: 50px 0;
+  text-align: center;
+  color: #5e554f;
+}
+
+#logo {
+  position: absolute;
+  top: 10px;
+  left: 120px;
+}
+
+
+#nav-toggle {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+
+
+
+#nav {
+  padding: 20px;
+  margin-top: 40px;
+  color: #5e554f;
+  position: absolute;
+  font-size: 10px;
+  top: 10px;
+  left: calc(40% + 10px);
+  white-space: nowrap;
+}
+
+#nav span {
+  margin-right: 25px;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+}
+
+#nav span:hover {
+  box-shadow: 10px 4px 8px rgba(189, 179, 161);
+  padding-right: 22px;
+}
+
+#nav span a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a {
+  font-size: 23px;
+  font-family: 'Times New Roman', serif;
+  margin-left: 15%;
+}
+
+
+
+br {
+  display: block;
+  margin: 11px 0;
+  line-height: 1px;
+  content: " ";
+}
+
+.dropdown-btn, .new-dropdown-btn {
+  background-color: #cfb995;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+
+.dropdown-btn:hover, .new-dropdown-btn:hover {
+  background-color: #3c3632;
+}
+
+.dropdown-content, .new-dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-top: none;
+  z-index: 1;
+}
+
+.dropdown-content p, .new-dropdown-content p {
+  margin: 10px;
+  font-size: 28px;
+}
+
+.info-box-container {
+  display: flex;
+  justify-content: space-around;
+  background: ;
+  padding: 30px 120px 140px;
+  margin-right: 0;
+  overflow: hidden;
+  
+}
+
+.info-box {
+  width: calc(50% - 20px);
+  height: 368px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+}
+
+.info-box img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+.info-box.active .dropdown-content {
+  display: block;
+}
+
+.new-info-box-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin: -110px 20px;
+   justify-content: center;
+}
+
+.new-info-box {
+  width: calc(33.33% - 20px);
+  height: 368px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+
+}
+
+.new-info-box img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+.new-info-box.active .new-dropdown-content {
+  display: block;
+}
+
+
+
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+    padding-right: calc(100vw - 100%);
+    padding-top: 50px;
+  }
+
+  #logo {
+    left: 10px;
+    width: 65%;
+    height: 45%;
+  }
+
+
+  #nav-toggle {
+    display: block; /* Show on smaller screens */
+  }
+
+  #nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #FAF5EC;
+    z-index: 1000;
+    overflow-y: auto;
+    text-align: center;
+    padding-top: 60px; /* Ensure dropdowns start below header */
+    text-align: center; /* Center align the nav items */
+  left: -45px; /* Add some padding */
+  }
+
+  #nav.active {
+    display: block;
+  }
+
+  #nav span {
+    display: block;
+    margin: -15px 0;
+    text-align: center;
+    width: 100%; /* Extend to full width */
+  }
+
+  #nav a {
+    display: block;
+    padding: 15px 0; /* Adjust padding for better touch target */
+    font-size: 18px; /* Increase font size for better readability */
+    color: #5e554f;
+    text-decoration: none;
+  }
+
+
+  #calendar {
+    padding: 35px;
+    margin-top: 100px;
+    padding-bottom: 30px;
+  }
+
+  #calendar iframe {
+    width: 100%;
+    height: 480px;
+    margin-top: 30px;
+  }
+
+  .body_info {
+    font-size: 21px;
+  }
+
+  .centered {
+    font-size: 33px;
+    font-family: cursive;
+    white-space: nowrap;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .info-box-container, .new-info-box-container {
+    flex-direction: column;
+    padding: 20px;
+    margin: -40px 0; /* Adjust margin to reduce spacing between boxes */
+  }
+
+  .info-box, .new-info-box {
+    width: 100%;
+    margin: 10px 0;
+    height: auto;
+    margin: 5px 0; /* Adjust margin to reduce spacing between boxes */
+  }
+
+  .info-box img, .new-info-box img {
+    width: 100%;
+    height: auto;
+  }
+
+  .dropdown-btn, .new-dropdown-btn {
+    font-size: 16px;
+  }
+
+  .dropdown-content, .new-dropdown-content {
+    position: static;
+    width: 100%;
+  }
+
+  .new-info-box {
+    width: 100%;
+    height: 330px;
+    margin: 10px 0;
+    padding: 0px;
+    margin: 5px 0; /* Adjust margin to reduce spacing between boxes */
+  }
+
+  .new-info-box img {
+    max-height: 288px;
+  }
+}

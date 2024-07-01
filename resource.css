@@ -1,0 +1,396 @@
+body {
+  background-color: #FAF5EC;
+  padding-top: 160px;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  font-size: 30px;
+  padding: 50px 0 0;
+  text-align: center;
+}
+
+#main_image {
+  background: #DCCFB9 url('https://media.istockphoto.com/id/1186232338/vector/marble-textured-light-colored-beige-vintage-paper-vector-illustration.jpg?s=612x612&w=0&k=20&c=MF4dl0cbwHVYoo8mz_LoaJXmjFambYK3fzdjuPTNCjM=') no-repeat center center;
+  background-size: cover;
+  padding: 0px;
+  text-align: center;
+  max-width: 100vw;
+  overflow: hidden;
+  position: relative;
+}
+
+.centered {
+  font-size: 35px;
+  font-family: 'URW Chancery L', cursive;
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 250, 255, 0.5);
+  border-radius: 10px;
+  backdrop-filter: blur(7px);
+  color: #5e554f;
+}
+
+#main_image img {
+  width: 60%; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-top: 70px; /* Add space on top */
+  margin-bottom: 30px; /* Add space on bottom */
+}
+
+
+#logo {
+  position: absolute;
+  top: 10px;
+  left: 120px;
+}
+
+
+#nav-toggle {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+
+
+
+#nav {
+  padding: 20px;
+  margin-top: 40px;
+  color: #5e554f;
+  position: absolute;
+  font-size: 10px;
+  top: 10px;
+  left: calc(40% + 10px);
+  white-space: nowrap;
+}
+
+#nav span {
+  margin-right: 25px;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+}
+
+#nav span:hover {
+  box-shadow: 10px 4px 8px rgba(189, 179, 161);
+  padding-right: 22px;
+}
+
+#nav span a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a {
+  font-size: 23px;
+  font-family: 'Times New Roman', serif;
+  margin-left: 15%;
+}
+
+
+
+br {
+  display: block;
+  margin: 11px 0;
+  line-height: 1px;
+  content: " ";
+}
+
+.body_info {
+      text-align: center;
+      font-size: 21px;
+      padding: 20px 0;
+      margin-top: 30px;
+      color: #5e554f;
+    }
+.titles {
+  margin: 30px 0; /* Adds space at the top and bottom */
+  font-size: 33px;
+  text-align: center; /* Centers the text */
+  font-family: 'URW Chancery L', cursive; /* Sets the cursive font */
+  background: #f9e4c4 url('https://media.istockphoto.com/id/1186232338/vector/marble-textured-light-colored-beige-vintage-paper-vector-illustration.jpg?s=612x612&w=0&k=20&c=MF4dl0cbwHVYoo8mz_LoaJXmjFambYK3fzdjuPTNCjM=') no-repeat center center;
+  background-size: cover;
+  padding: 60px 0; /* Adds padding at the top and bottom */
+}
+
+.final-link {
+  margin: 30px 0; /* Adds space at the top and bottom */
+  font-size: 18px;
+  text-align: center; /* Centers the text */
+  padding: 20px 0; /* Adds padding at the top and bottom */
+  padding: 30px 60px; /* Adds padding at the top, bottom, left, and right */
+}
+
+
+.resources-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  padding: 10px 30px 10px 10px;
+  margin-bottom: 80px;
+}
+
+.resources-section img {
+  width: 130px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 160px; /* Adjust margin to move the image to the right */
+}
+
+.book-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.book-list {
+  padding-left: 0; /* Remove padding that moves the list */
+}
+
+.book-list ul {
+  list-style-type: none; /* Remove default list style */
+  padding: 0;
+}
+
+.book-icon {
+  margin-right: 10px; /* Adjust this value to increase space */
+}
+
+.book-list li {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 0; /* Remove margin between list items */
+  white-space: nowrap; /* Prevent wrapping of text */
+}
+
+.book-list a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #5e554f;
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+.english-text, .arabic-text {
+  flex: 1; /* Equal flex distribution */
+  text-align: center; /* Center align text */
+}
+
+.arabic-text {
+  margin-left: 40px; /* Adjust this value to add space between English and Arabic */
+}
+
+ .supplication-section {
+      display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  padding: 10px 20px;
+    }
+
+    .supplication-section img {
+      width: 180px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 180px; /* Adjust margin to move the image to the right */
+    }
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+    padding-right: calc(100vw - 100%);
+    padding-top: 50px;
+  }
+
+  #logo {
+    left: 10px;
+    width: 65%;
+    height: 45%;
+  }
+
+
+  #nav-toggle {
+    display: block; /* Show on smaller screens */
+  }
+
+  #nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #FAF5EC;
+    z-index: 1000;
+    overflow-y: auto;
+    text-align: center;
+    padding-top: 60px; /* Ensure dropdowns start below header */
+    text-align: center; /* Center align the nav items */
+  left: -45px; /* Add some padding */
+  }
+
+  #nav.active {
+    display: block;
+  }
+
+  #nav span {
+    display: block;
+    margin: -15px 0;
+    text-align: center;
+    width: 100%; /* Extend to full width */
+  }
+
+  #nav a {
+    display: block;
+    padding: 15px 0; /* Adjust padding for better touch target */
+    font-size: 18px; /* Increase font size for better readability */
+    color: #5e554f;
+    text-decoration: none;
+  }
+
+
+  #main_image {
+    padding: 35px 10px;
+    margin-top: 100px;
+    padding-bottom: 40px;
+  }
+
+  .body_info {
+    font-size: 21px;
+  }
+
+  .centered {
+    font-size: 30px;
+    font-family: cursive;
+    white-space: nowrap;
+    position: absolute;
+    padding: 5px;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+   #main_ {
+    padding-top: 15px; /* Adjust the value as needed */
+  }
+#main_image img {
+    width: 100%; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 20px; /* Add space between image and text */
+  }
+  .body_info {
+      font-size: 18px;
+      padding: 10px; /* Adjust padding for mobile */
+      margin-top: 10px; /* Adjust margin for spacing */
+      color: #5e554f;
+      text-align: center; /* Center align text */
+    }
+
+    .resources-section {
+      display: flex;
+      flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+      justify-content: center;
+      align-items: center;
+      padding: 10px; /* Adjust padding for mobile */
+      margin-top: 20px; /* Adjust margin for spacing */
+    }
+
+    .resources-section img {
+      width: 80px; /* Adjust size as needed */
+      height: auto; /* Maintain aspect ratio */
+      margin: 10px; /* Add spacing between items */
+    }
+
+    .book-list {
+  list-style-type: none; /* Remove default list style */
+  padding: 0;
+  text-align: left; /* Align text to the left */
+  width: 100%; /* Ensure full width on mobile */
+  max-width: 100%; /* Ensure content does not overflow */
+  overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+.book-list li {
+  font-size: 12px; /* Adjust font size as needed */
+  line-height: 1.4;
+  margin-bottom: 8px; /* Add spacing between items */
+  word-wrap: break-word; /* Wrap long words */
+}
+
+.book-list a {
+  text-decoration: none;
+  color: #5e554f;
+  display: flex;
+  font-size: 16px;
+  align-items: center; /* Align items vertically */
+}
+
+.arabic-text {
+  font-family: 'Arial', sans-serif; /* Specify an Arabic-compatible font */
+  direction: rtl; /* Right-to-left text direction for Arabic */
+  display: block; /* Ensure Arabic text wraps correctly */
+  margin-top: 5px; /* Add margin between items */
+  clear: both; /* Clear floats */
+  width: 100%; /* Ensure full width for Arabic text */
+  white-space: normal; /* Allow normal wrapping of text */
+}
+
+@media (max-width: 768px) {
+  .book-list li {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: flex-start; /* Align items to the start on smaller screens */
+  }
+  .arabic-text {
+    margin-left: 2; /* Reset margin on smaller screens */
+    padding-left: 0; /* Reset padding on smaller screens */
+    margin-top: 4px; /* Add margin between items on smaller screens */
+    margin-left: 4px;
+  }
+}
+
+
+    .supplication-section {
+      display: flex;
+      flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+      justify-content: center;
+      align-items: center;
+      padding: 10px; /* Adjust padding for mobile */
+      margin-top: 20px; /* Adjust margin for spacing */
+    }
+
+    .supplication-section img {
+      width: 100px; /* Adjust size as needed */
+      height: auto; /* Maintain aspect ratio */
+      margin: 10px; /* Add spacing between items */
+    }
+
+    .final-link {
+      margin: 20px auto; /* Center and add margin */
+      font-size: 17px; /* Font size */
+      text-align: center; /* Center align text */
+      padding: 10px; /* Padding around the content */
+      color: #5e554f; /* Text color */
+      line-height: 1.5;
+    }
+  .titles {
+  margin: 30px 0; /* Adds space at the top and bottom */
+  font-size: 32px;
+  text-align: center; /* Centers the text */
+  font-family: 'URW Chancery L', cursive; /* Sets the cursive font */
+  background: #f9e4c4 url('https://media.istockphoto.com/id/1186232338/vector/marble-textured-light-colored-beige-vintage-paper-vector-illustration.jpg?s=612x612&w=0&k=20&c=MF4dl0cbwHVYoo8mz_LoaJXmjFambYK3fzdjuPTNCjM=') no-repeat center center;
+  background-size: cover;
+  padding: 50px 0; /* Adds padding at the top and bottom */
+}
+  @media (max-width: 768px) {
+  .book-list li {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }

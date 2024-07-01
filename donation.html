@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - ABSO donations</title>
+  <link rel="stylesheet" href="./donation.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Texas ABSO</title>
+  <style>
+    /* Your CSS styles here */
+  </style>
+</head>
+<body>
+  <div id="logo">
+    <img src="https://i.ibb.co/qYqHYsS/Screenshot-2024-06-23-at-12-36-23-PM-removebg-preview-1.png" width="40%" height="40%" alt="Image">
+  </div>
+  <div id="nav-toggle">&#9776;</div> <!-- Menu icon -->
+  <div id="nav">
+    <span><a href="home.html">Home</a></span>
+    <span><a href="event.html">Events</a></span>
+    <span><a href="leadership.html">Leadership</a></span>
+    <span><a href="resource.html">Resources</a></span>
+    <span><a href="donation.html">Donations</a></span>
+  </div>
+  <div id="main_image">
+    <div id="main_">
+       <div class="centered">Donations:</div>
+      <img src="https://www.fountaininstitute.co.uk/wp-content/uploads/2022/11/zakat-apply.webp" width="100%" height="auto" alt="Image">
+    </div>
+  </div>
+  <div class="titles">Venmo: @utexasabso </div>
+  <div class="body_info">Help support us to create more fun events and resources for students on campus :)
+</div>
+
+  </body>
+  <script>
+    // JavaScript for nav-toggle
+window.onload = function () {
+  document.getElementById("nav-toggle").onclick = function () {
+    document.getElementById("nav").classList.toggle("active");
+    if (document.getElementById("nav").classList.contains("active")) {
+      document.body.style.overflow = "hidden"; // Disable scrolling when menu is open
+    } else {
+      document.body.style.overflow = "auto"; // Enable scrolling when menu is closed
+    }
+  };
+};
+
+
+  </script>
+</html>
+<!-- partial -->
+
+</body>
+</html>

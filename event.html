@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - ABSO events</title>
+  <link rel="stylesheet" href="./event.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Texas ABSO</title>
+  <style>
+    /* Your CSS styles here */
+  </style>
+</head>
+<body>
+  <div id="logo">
+    <img src="https://i.ibb.co/qYqHYsS/Screenshot-2024-06-23-at-12-36-23-PM-removebg-preview-1.png" width="40%" height="40%" alt="Image">
+  </div>
+  <div id="nav-toggle">&#9776;</div> <!-- Menu icon -->
+  <div id="nav">
+    <span><a href="home.html">Home</a></span>
+    <span><a href="event.html">Events</a></span>
+    <span><a href="leadership.html">Leadership</a></span>
+    <span><a href="resource.html">Resources</a></span>
+    <span><a href="donation.html">Donations</a></span>
+  </div>
+  <div id="calendar">
+    <div id="main_">
+       <div class="centered">Events:</div>
+      <iframe src="https://calendar.google.com/calendar/embed?src=b977a9d294fe1fd242a353380a878ba70e4bd04b06b96a6638a9c603e084689b%40group.calendar.google.com&ctz=America%2FChicago" style="border: 0" width="900" height="700" frameborder="0" scrolling="no"></iframe>
+    </div>
+  </div>
+  <div class="body_info">Take a glimpse at what we do!</div>
+
+  <div class="info-box-container">
+    <!-- Info Box 1 -->
+    <div class="info-box">
+      <img src="https://i.ibb.co/RctTPj9/P1050437.jpg" alt="Example Image">
+      <button class="dropdown-btn">Eid Festival</button>
+      <div class="dropdown-content">
+
+      </div>
+    </div>
+
+    <!-- Info Box 2 -->
+    <div class="info-box">
+      <img src="https://i.ibb.co/jzmVq2j/IMG-7352.jpg" alt="Example Image">
+      <button class="dropdown-btn">Guest Speaker</button>
+      <div class="dropdown-content">
+
+      </div>
+    </div>
+
+    <!-- Info Box 3 -->
+    <div class="info-box">
+      <img src="https://i.ibb.co/ZHLWN8L/IMG-8407.jpg" alt="Example Image">
+      <button class="dropdown-btn">Ramadan Iftars</button>
+      <div class="dropdown-content">
+
+      </div>
+    </div>
+  </div>
+
+  <div class="new-info-box-container">
+  <!-- Info Box 4 -->
+  <div class="new-info-box">
+    <img src="https://i.ibb.co/zP7Y2gm/IMG-3936.jpg" alt="Example Image">
+    <button class="new-dropdown-btn">Fundraising</button>
+    <div class="new-dropdown-content">
+
+    </div>
+  </div>
+
+  <!-- Info Box 5 -->
+  <div class="new-info-box">
+    <img src="https://i.ibb.co/tLYrgH5/Screenshot-2024-06-27-at-10-47-17-PM.png">
+    <button class="new-dropdown-btn">Dua and Donuts</button>
+    <div class="new-dropdown-content">
+
+    </div>
+  </div>
+
+</body>
+  <script>
+    // JavaScript for nav-toggle
+window.onload = function () {
+  document.getElementById("nav-toggle").onclick = function () {
+    document.getElementById("nav").classList.toggle("active");
+    if (document.getElementById("nav").classList.contains("active")) {
+      document.body.style.overflow = "hidden"; // Disable scrolling when menu is open
+    } else {
+      document.body.style.overflow = "auto"; // Enable scrolling when menu is closed
+    }
+  };
+};
+
+
+  </script>
+</html>
+<!-- partial -->
+
+</body>
+</html>
